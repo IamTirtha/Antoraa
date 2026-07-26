@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antu webfile</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="../css/style.css">
+
+    
+</head>
+<body class="bg-black text-green-400 overflow-x-hidden">
+
+<div id="bootScreen" class="h-screen  px-4">
+
+    <div class="w-[90%] max-w-5xl  bg-[#050505] shadow-2xl">
+
+        <!-- Top Bar -->
+        <div class="flex items-center gap-2 px-5 py-3 border-b border-green-800">
+            <span class="ml-5 text-green-300 text-sm">
+                root@kali:~# Project.exe
+            </span>
+        </div>
+
+        <!-- Terminal content -->
+        <div id="terminal" class="p-6 text-base md:text-lg leading-7 terminal-text">
+            <span class="cursor">█</span>
+        </div>
+
+        <!-- Continue button (hidden until typing finishes) -->
+        <div class="px-6 pb-6">
+            <button id="continueBtn" style="display: none;">
+                Tap here to Continue...
+            </button>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="../js/boot.js"></script>
+<script src="../js/button-functionality.js"></script>
+</body>
+</html>

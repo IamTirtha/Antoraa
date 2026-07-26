@@ -1,0 +1,45 @@
+ /* Hacker / Kali‑style terminal tweaks */
+        body {
+            font-family: 'JetBrains Mono', monospace;
+            background-color: #000000;
+            color: #00ff41; /* classic green */
+            overflow-x: hidden;
+        }
+
+        /* Optional: subtle glow on text */
+        .terminal-text {
+            color: #00ff41;
+            text-shadow: 0 0 4px rgba(0, 255, 65, 0.6);
+        }
+
+        /* Blinking cursor */
+        .cursor {
+            display: inline-block;
+            color: #00ff41;
+            animation: blink 1s step-end infinite;
+            text-shadow: 0 0 6px rgba(0, 255, 65, 0.8);
+        }
+
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+
+        /* Continue button styling */
+        #continueBtn {
+            margin-top: 1rem;
+            padding: 0.5rem 1rem;
+            background: transparent;
+            border: 1px solid #00ff41;
+            color: #00ff41;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        #continueBtn:hover {
+            background: #00ff41;
+            color: #000000;
+            box-shadow: 0 0 10px rgba(0, 255, 65, 0.7);
+        }
