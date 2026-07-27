@@ -36,7 +36,7 @@ const lines = [
 
 "Status ............. Most Important",
 
-"Launching Project..."
+"Project Launching ..."
 ];
 
 let line = 0;
