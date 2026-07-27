@@ -3,9 +3,9 @@ const input = document.getElementById("terminalInput");
 
 let step = 0;
 
-// Set your allowed name and date of birth here
-const ALLOWED_NAME = "Antu";          // change this
-const ALLOWED_DOB = "2004-07-05";     // change this (YYYY-MM-DD or any format you like)
+
+const ALLOWED_NAME = "Antu";          // Antu
+const ALLOWED_DOB = "2004-07-05";     // 2004-07-05
 
 showIntro();
 
@@ -70,6 +70,7 @@ input.addEventListener("keydown", (e) => {
 
             if (nameOk && dobOk) {
                 print("ACCESS GRANTED");
+                showLoader("Decrypting Memories...");
                 setTimeout(() => {
                     window.location.href = "../timeline/index.html";
                 }, 1500);

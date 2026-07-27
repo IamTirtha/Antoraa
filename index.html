@@ -9,10 +9,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/animation.css">
-    <link rel="stylesheet" href="./css/terminal.css">
+    <link rel="stylesheet" href="./css/loader.css">
 
     
 </head>
@@ -45,7 +46,31 @@
 
 </div>
 
+<!-- Loader -->
+<div
+    id="pageLoader"
+    class="fixed inset-0 z-[9999] flex items-center justify-center bg-black/50 backdrop-blur-lg"
+>
+
+    <div class="flex flex-col items-center">
+
+        <!-- Spinner -->
+        <div
+            class="w-16 h-16 rounded-full border-4 border-gray-700 border-t-green-400 animate-spin">
+        </div>
+
+        <p
+            id="loaderText"
+            class="mt-6 font-mono text-green-400 tracking-widest text-lg">
+            Loading...
+        </p>
+
+    </div>
+
+</div>
+
 <script src="../js/boot.js"></script>
 <script src="../js/button-functionality.js"></script>
+<script src="../js/loader.js"></script>
 </body>
 </html>

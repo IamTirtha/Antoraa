@@ -8,6 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <link rel="stylesheet" href="../css/animation.css">
+    <link rel="stylesheet" href="../css/loader.css">
 </head>
 
 <body class="bg-[#0D1117] text-green-400 font-mono h-screen flex items-center justify-center">
@@ -27,7 +28,7 @@
             </div>
 
             <h1 class="ml-6 text-white tracking-widest text-sm uppercase">
-                Project Antoraa
+                root@kali:~# projectantoraa.exe
             </h1>
 
         </div>
@@ -59,7 +60,31 @@
 
     </div>
 
+    <!-- Loader -->
+    <div
+        id="pageLoader"
+        class="fixed inset-0 z-[9999] flex items-center justify-center bg-black/50 backdrop-blur-lg"
+    >
+
+        <div class="flex flex-col items-center">
+
+            <!-- Spinner -->
+            <div
+                class="w-16 h-16 rounded-full border-4 border-gray-700 border-t-green-400 animate-spin">
+            </div>
+
+            <p
+                id="loaderText"
+                class="mt-6 font-mono text-green-400 tracking-widest text-lg">
+                Loading...
+            </p>
+
+        </div>
+
+    </div>
+
 <script src="../js/terminal.js"></script>
+<script src="../js/loader.js"></script>
 
 </body>
 </html>
