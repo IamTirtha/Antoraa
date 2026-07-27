@@ -72,7 +72,7 @@ input.addEventListener("keydown", (e) => {
                 print("ACCESS GRANTED");
                 showLoader("Decrypting Memories...");
                 setTimeout(() => {
-                    window.location.href = "../timeline/index.html";
+                    window.location.href = "../boot/index.html";
                 }, 1500);
             } else {
                 print("ACCESS DENIED");

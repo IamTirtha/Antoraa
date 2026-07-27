@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Screen</title>
+        
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="stylesheet" href="../css/animation.css">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Roboto+Slab:wght@100..900&family=Tiro+Bangla:ital@0;1&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-[#FFF9F6] overflow-x-hidden relative min-h-screen">
+
+    <!-- Background Blobs -->
+    <div class="blob blob1"></div>
+    <div class="blob blob2"></div>
+
+    <!-- Centered Content -->
+    <main class="min-h-screen flex items-center justify-center px-6 sm:px-8">
+        <div class="text-center max-w-3xl w-full">
+
+            <p class="fade-line text-[1.8rem] sm:text-3xl md:text-4xl lg:text-5xl leading-[1.6] sm:leading-[1.8] font-medium text-[#353535] mb-6 sm:mb-8">
+                হাই, অন্তরা। 🌸
+            </p>
+
+            <p class="fade-line text-[1.8rem] sm:text-3xl md:text-4xl lg:text-5xl leading-[1.6] sm:leading-[1.8] font-medium text-[#353535] mb-6 sm:mb-8">
+                আজ আমি কোনো কোড লিখছি না।
+            </p>
+
+            <p class="fade-line text-[1.8rem] sm:text-3xl md:text-4xl lg:text-5xl leading-[1.6] sm:leading-[1.8] font-medium text-[#353535] mb-6 sm:mb-8">
+                এটা শুধু একটা সাধারণ ওয়েবসাইট নয়।
+            </p>
+
+            <p class="fade-line text-[1.8rem] sm:text-3xl md:text-4xl lg:text-5xl leading-[1.6] sm:leading-[1.8] font-medium text-[#353535] mb-6 sm:mb-8">
+                This is probably the most 
+                <br class="hidden sm:inline" />
+                honest project I've ever built.
+            </p>
+
+            <p class="fade-line text-[1.8rem] sm:text-3xl md:text-4xl lg:text-5xl leading-[1.6] sm:leading-[1.8] font-medium text-[#353535] mb-6 sm:mb-8">
+                যদি তুমি প্রস্তুত থাকো...
+            </p>
+
+            <p class="fade-line text-[1.8rem] sm:text-3xl md:text-4xl lg:text-5xl leading-[1.6] sm:leading-[1.8] font-medium text-[#353535] mb-6 sm:mb-8">
+                তাহলে চল, শুরু করা যাক।
+            </p>
+
+            <button
+                id="startBtn"
+                class="mt-10 sm:mt-14 px-8 sm:px-12 py-4 sm:py-5 rounded-full bg-white text-[#444] text-lg sm:text-xl font-semibold shadow-[0_15px_40px_rgba(0,0,0,0.08)] border border-[rgba(0,0,0,0.05)] hover:shadow-[0_20px_50px_rgba(0,0,0,0.12)] transition"
+            >
+                Tap to continue.....🙏
+            </button>
+
+        </div>
+    </main>
+
+    <script src="../js/welcome.js"></script>
+    <!-- Other scripts if you still need them -->
+    <script src="../js/button-functionality.js"></script>
+    <!-- <script src="../js/terminal.js"></script> -->
+    <script src="../js/loader.js"></script>
+</body>
+</html>

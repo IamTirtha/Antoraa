@@ -2,6 +2,10 @@ const loader = document.getElementById("pageLoader");
 const loaderText = document.getElementById("loaderText");
 
 function showLoader(message = "Loading...") {
+    if (!loader || !loaderText) {
+        return;
+    }
+
     loaderText.textContent = message;
 
     loader.classList.add("active");
@@ -9,6 +13,10 @@ function showLoader(message = "Loading...") {
 }
 
 function hideLoader() {
+    if (!loader) {
+        return;
+    }
+
     loader.classList.remove("active");
     document.body.classList.remove("loading");
 }

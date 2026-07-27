@@ -1,0 +1,56 @@
+body {
+            font-family: 'Hind Siliguri', sans-serif;
+        }
+
+        /* Background blobs */
+        .blob {
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            filter: blur(120px);
+            opacity: 0.35;
+            z-index: -1;
+        }
+
+        .blob1 {
+            background: #ffd6e7;
+            top: -120px;
+            left: -120px;
+        }
+
+        .blob2 {
+            background: #ffe8b8;
+            bottom: -150px;
+            right: -150px;
+        }
+
+        /* Fade-in line animation */
+        .fade-line {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 1s ease, transform 1s ease;
+        }
+
+        .fade-line.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Button animation */
+        #startBtn {
+            opacity: 0;
+            transform: translateY(20px);
+            pointer-events: none;
+            transition: opacity 1s ease, transform 1s ease;
+        }
+
+        #startBtn.show {
+            opacity: 1;
+            transform: translateY(0);
+            pointer-events: auto;
+        }
+
+        #startBtn:hover {
+            transform: translateY(-5px);
+        }
