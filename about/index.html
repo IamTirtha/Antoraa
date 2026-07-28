@@ -8,6 +8,8 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="../css/animation.css">
     <link rel="stylesheet" href="../css/loader.css">
+    <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="../css/stickynote.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,36 +18,132 @@
 
 <body class="bg-[#FFF9F6] overflow-x-hidden relative min-h-screen">
 
+    <!-- Background Blobs -->
     <div class="blob blob1"></div>
     <div class="blob blob2"></div>
 
-    <main class="min-h-screen flex items-center justify-center px-6 sm:px-8">
-        <div class="text-center max-w-3xl w-full">
+    <main class="w-full">
 
-            <p class="fade-line text-[1.8rem] sm:text-3xl md:text-4xl lg:text-5xl leading-[1.6] font-medium text-[#353535] mb-6 sm:mb-8">
-                Write your own line here...
-            </p>
+        <!-- ================= HERO ================= -->
+        <section class="min-h-screen flex items-center justify-center px-6 sm:px-8">
 
-            <button
-                id="startBtn"
-                data-next="../memories/index.html"
-                class="mt-10 sm:mt-14 px-8 sm:px-12 py-4 sm:py-5 rounded-full bg-white text-[#444] text-lg sm:text-xl font-semibold shadow-[0_15px_40px_rgba(0,0,0,0.08)] border border-[rgba(0,0,0,0.05)] hover:shadow-[0_20px_50px_rgba(0,0,0,0.12)] transition"
-            >
-                Continue...
-            </button>
+            <div class="text-center max-w-4xl">
 
-        </div>
+                <h1 class="fade-line text-5xl sm:text-6xl md:text-7xl font-semibold text-[#2f2f2f] leading-tight">
+                    তোমাকে নিয়ে...
+                </h1>
+
+                <p class="fade-line mt-8 text-xl sm:text-2xl md:text-3xl text-[#666] leading-relaxed">
+                    কিছু কথা,<br>
+                    যেগুলো হয়তো তুমি জানো না।
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= HER SMILE ================= -->
+
+        <section class="min-h-screen flex items-center justify-center px-6">
+
+            <div class="max-w-3xl text-center">
+
+                <p class="fade-line text-2xl sm:text-3xl md:text-4xl text-[#353535] leading-[2]">
+
+                    <span class="text-4xl sm:text-5xl font-semibold block mb-10">
+                        তোমার হাসিটা...
+                    </span>
+
+                    খুব জোরে না,<br>
+                    খুব নাটকীয়ও না।<br><br>
+
+                    কিন্তু অদ্ভুতভাবে শান্ত ও লাজুক ।
+
+                </p>
+
+            </div>
+        </section>
+
+        <section class="min-h-screen flex items-center justify-center px-6">
+
+            <div class="max-w-3xl text-center">
+
+                <p class="fade-line text-2xl sm:text-3xl md:text-4xl text-[#353535] leading-[2]">
+
+                    <span class="text-4xl sm:text-5xl font-semibold block mb-10">
+                        তোমার চোখ দুটি ...
+                    </span>
+                    <br>
+
+                    খুব শান্ত ও মায়াবী ।
+
+                </p>
+
+            </div>
+        </section>
+
+        <!-- ================= TEASER ================= -->
+
+        <section class="min-h-screen flex items-center justify-center px-6">
+
+            <div class="text-center max-w-3xl">
+
+                <p class="fade-line text-3xl sm:text-4xl md:text-5xl leading-[2] text-[#333]">
+
+                    কিন্তু...<br><br>
+
+                    এসবই শুধু শুরু।<br><br>
+
+                    এরপর বলবো,<br>
+                    কীভাবে ধীরে ধীরে<br>
+                    তুমি আমার পৃথিবীর<br>
+                    সবচেয়ে সুন্দর অভ্যাস হয়ে গেলে।
+
+                </p>
+
+                <button
+                    id="startBtn"
+                    data-next="../letter/index.html"
+                    class="mt-16 px-10 py-5 rounded-full bg-white text-[#444] text-xl font-semibold shadow-[0_15px_40px_rgba(0,0,0,0.08)] border border-[rgba(0,0,0,0.05)] hover:shadow-[0_20px_50px_rgba(0,0,0,0.12)] transition duration-300"
+                >
+                    আরও কিছু বলি...
+                </button>
+
+            </div>
+
+        </section>
+
     </main>
 
-    <div id="pageLoader" class="fixed inset-0 z-[9999] flex items-center justify-center bg-black/50 backdrop-blur-lg">
-        <div class="flex flex-col items-center">
-            <div class="w-16 h-16 rounded-full border-4 border-gray-700 border-t-green-400 animate-spin"></div>
-            <p id="loaderText" class="mt-6 font-mono text-green-400 tracking-widest text-lg">Loading...</p>
-        </div>
+    <!-- Sticky-note -->
+    <div class="sticky-note">
+    <span>👇</span>
+    <p>Scroll Down</p>
     </div>
+
+
+    <!-- ================= Loader ================= -->
+
+    <div id="pageLoader" class="fixed inset-0 z-[9999] flex items-center justify-center bg-black/50 backdrop-blur-lg">
+
+        <div class="flex flex-col items-center">
+
+            <div class="w-16 h-16 rounded-full border-4 border-gray-700 border-t-green-400 animate-spin"></div>
+
+            <p id="loaderText" class="mt-6 font-mono text-green-400 tracking-widest text-lg">
+                Loading...
+            </p>
+
+        </div>
+
+    </div>
+
 
     <script src="../js/welcome.js"></script>
     <script src="../js/button-functionality.js"></script>
     <script src="../js/loader.js"></script>
+
+
 </body>
 </html>
