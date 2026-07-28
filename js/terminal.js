@@ -61,7 +61,8 @@ input.addEventListener("keydown", (e) => {
             print("Decrypting Memories...");
         }, 1000);
 
-        setTimeout(() => {
+        setTimeout(() => 
+            {
             print("");
 
             // Check both name and date of birth
@@ -77,12 +78,11 @@ input.addEventListener("keydown", (e) => {
             } else {
                 print("ACCESS DENIED");
                 print("Incorrect name or date of birth.");
-                // Optionally reset to step 0 to try again:
-                // step = 0;
-                // input.dataset.userName = "";
-                // print("");
-                // print("Enter your name");
-            }
-        }, 2500);
+                print("");
+                print("Try again. Enter your name");
+                step = 0;
+                input.dataset.userName = "";
+                    }
+            }, 2500);
     }
 });
