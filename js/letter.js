@@ -28,3 +28,7 @@
         },1500);
     
     });
+
+    btn.addEventListener("click", ()=>{
+        music.play();
+    })
