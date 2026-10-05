@@ -4,8 +4,8 @@ const input = document.getElementById("terminalInput");
 let step = 0;
 
 
-const ALLOWED_NAME = "Antu";          // Antu
-const ALLOWED_DOB = "2004-07-05";     // 2004-07-05
+const ALLOWED_NAME = "Tirtho";          // Antu
+const ALLOWED_DOB = "2004-11-20";     // 2004-07-05
 
 showIntro();
 
